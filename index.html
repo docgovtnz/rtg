@@ -45,10 +45,27 @@
         // For each row, columns `Latitude`, `Longitude`, and `Name` are required
         for (var i in data) {
           var row = data[i];
-    
+          var popupContent = '<b>' + row.Name + row.Protection '</b><br>' +
+                    'Year: ' + row.Year + '<br>' + 'Focus: ' + row.Focus ;
+          if (row.Focus == 'Lobster') {
+              var icon = = L.icon({
+                iconUrl: 'icons8-lobster-24.png',
+                iconSize:     [24, 24], // size of the icon
+              });
+            } else if (row.Focus == 'Fish' || row.Focus == 'Deep Fish') {
+              var icon = = L.icon({
+                iconUrl: 'icons8-fish-24.png',
+                iconSize:     [24, 24], // size of the icon
+              });
+            } else if (row.Focus == 'Mesophotic') {
+              var icon = = L.icon({
+                iconUrl: 'icons8-reef-24.png',
+                iconSize:     [24, 24], // size of the icon
+              });
+            } 
           var marker = L.marker([row.Latitude, row.Longitude], {
             opacity: 1
-          }).bindPopup(row.Name);
+          }).bindPopup(popupContent);
           
           marker.addTo(map);
         }
