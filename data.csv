@@ -1,28 +1,20 @@
-﻿Name,Code,Protection,Year,Focus,Latitude ,Longitude,,
-Mokohinau Type 1,MOK,HPA,2024,Lobster,-35.940455,175.146938,,
-Mokohinau Type 1,MOK,HPA,2024,Fish,-35.940455,175.146938,,
-Mokohinau Type 1,MOK,HPA,2024,Deep Fish,-35.940455,175.146938,,
-Hauturu / Little Barrier Island,HAU,HPA,2024,Lobster,-36.176131,175.069625,,
-Hauturu / Little Barrier Island,HAU,HPA,2024,Fish,-36.176131,175.069625,,
-Hauturu / Little Barrier Island,HAU,HPA,2024,Deep Fish,-36.176131,175.069625,,
-Hauturu / Little Barrier Island SPA,HAUSPA,SPA,2024,Mesophotic ,-36.193512,175.203922,,
-Hauturu / Little Barrier Island,HAU,HPA,2024,Mesophotic ,-36.141773,175.104873,,
-Cape Rodney Okakari Point Marine Reserve extension,CROP,MPA,2024,Lobster,-36.268721,174.791449,,
-Tawharanui,TAW,MPA,2024,Lobster,-36.365376,174.846183,,
-Tiritiri Type 1,TIR,HPA,2024,Lobster,-36.603838,174.881278,,
-The Noises,NOI,HPA,2024,Lobster,-36.692107,174.969058,,
-Motukawao,MTK,HPA,2024,Lobster,-36.6553,175.373328,,
-Colville Type 1,COL,HPA,2024,Mesophotic ,-36.455975,175.299463,,
-Colville SPA,COLSPA,HPA,2024,Mesophotic ,-36.427011,175.385238,,
-Whanganui A Hei Marine Reserve extension,TWOH,MPA,2024,Lobster,-36.825402,175.796327,,
-Aldermen North,ALN,HPA,2024,Deep Fish,-36.857285,176.120654,,
-Alderman South,ALS,HPA,2024,Deep Fish,-37.02431,176.12695,,
-Slipper,SLI,HPA,2024,Lobster,-37.049393,175.942445,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,  
+Name,Code,Protection,Year,Focus,Latitude ,Longitude
+Mokohinau Type 1,MOK,HPA,2024,Lobster,-35.940455,175.146938
+Mokohinau Type 1,MOK,HPA,2024,Fish,-35.940455,175.146938
+Mokohinau Type 1,MOK,HPA,2024,Deep Fish,-35.940455,175.146938
+Hauturu / Little Barrier Island,HAU,HPA,2024,Lobster,-36.176131,175.069625
+Hauturu / Little Barrier Island,HAU,HPA,2024,Fish,-36.176131,175.069625
+Hauturu / Little Barrier Island,HAU,HPA,2024,Deep Fish,-36.176131,175.069625
+Hauturu / Little Barrier Island SPA,HAUSPA,SPA,2024,Mesophotic ,-36.193512,175.203922
+Hauturu / Little Barrier Island,HAU,HPA,2024,Mesophotic ,-36.141773,175.104873
+Cape Rodney Okakari Point Marine Reserve extension,CROP,MPA,2024,Lobster,-36.268721,174.791449
+Tawharanui,TAW,MPA,2024,Lobster,-36.365376,174.846183
+Tiritiri Type 1,TIR,HPA,2024,Lobster,-36.603838,174.881278
+The Noises,NOI,HPA,2024,Lobster,-36.692107,174.969058
+Motukawao,MTK,HPA,2024,Lobster,-36.6553,175.373328
+Colville Type 1,COL,HPA,2024,Mesophotic ,-36.455975,175.299463
+Colville SPA,COLSPA,HPA,2024,Mesophotic ,-36.427011,175.385238
+Whanganui A Hei Marine Reserve extension,TWOH,MPA,2024,Lobster,-36.825402,175.796327
+Aldermen North,ALN,HPA,2024,Deep Fish,-36.857285,176.120654
+Alderman South,ALS,HPA,2024,Deep Fish,-37.02431,176.12695
+Slipper,SLI,HPA,2024,Lobster,-37.049393,175.942445
