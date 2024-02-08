@@ -45,8 +45,7 @@
         // For each row, columns `Latitude`, `Longitude`, and `Name` are required
         for (var i in data) {
           var row = data[i];
-          var popupContent = '<b>' + row.Name + ' ' + row.Protection + '</b><br>' +
-                    'Year: ' + row.Year + '<br>' + 'Focus: ' + row.Focus ;
+          var popupContent = '<b>' + row.Name + ' ' + row.Protection + '</b><br>' + 'Year: ' + row.Year + '<br>' + 'Focus: ' + row.Focus;
           if (row.Focus == 'Lobster') {
               var markerIcon = L.icon({
                 iconUrl: 'icons/icons8-lobster-24.png',
