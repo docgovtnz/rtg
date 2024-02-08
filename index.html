@@ -48,22 +48,23 @@
           var popupContent = '<b>' + row.Name + row.Protection '</b><br>' +
                     'Year: ' + row.Year + '<br>' + 'Focus: ' + row.Focus ;
           if (row.Focus == 'Lobster') {
-              var icon = = L.icon({
+              var markerIcon = L.icon({
                 iconUrl: 'icons/icons8-lobster-24.png',
                 iconSize:     [24, 24], // size of the icon
               });
             } else if (row.Focus == 'Fish' || row.Focus == 'Deep Fish') {
-              var icon = = L.icon({
+              var markerIcon = L.icon({
                 iconUrl: 'icons/icons8-fish-24.png',
                 iconSize:     [24, 24], // size of the icon
               });
             } else if (row.Focus == 'Mesophotic') {
-              var icon = = L.icon({
+              var markerIcon = L.icon({
                 iconUrl: 'icons/icons8-reef-24.png',
                 iconSize:     [24, 24], // size of the icon
               });
             } 
           var marker = L.marker([row.Latitude, row.Longitude], {
+            icon: markerIcon,
             opacity: 1
           }).bindPopup(popupContent);
           
