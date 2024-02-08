@@ -80,7 +80,10 @@
         .featureLayer({
           url: "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Hauraki_Gulf_Marine_Park/FeatureServer/4"
         });
-       hg.addTo(map);
+        hg.setStyle({
+            weight: 1
+        });
+        hg.addTo(map);
 
       
     </script>
