@@ -9,6 +9,7 @@
       integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/esri-leaflet@3.0.12/dist/esri-leaflet.js" crossorigin="anonymous"></script>
     <!-- Load jQuery and PapaParse to read data from a CSV file -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/papaparse@5.4.1/papaparse.min.js"></script>
@@ -74,6 +75,13 @@
 
       map = L.map('map').addLayer(tiles).setView(startPos, startZoom);
       map.attributionControl.setPrefix('<a href="https://leafletjs.com/">Leaflet</a>');
+      
+       var hg = L.esri
+        .featureLayer({
+          url: "https://services1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/rest/services/Hauraki_Gulf_Marine_Park/FeatureServer/4"
+        });
+       hg.addTo(map);
+
       
     </script>
   </body>
