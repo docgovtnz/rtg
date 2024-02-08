@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Department of Conservation - draft monitoring locations for RtG</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Load jQuery and PapaParse to read data from a CSV file -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/papaparse@5.4.1/papaparse.min.js"></script>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="map" style="width: 100%; height: 100%"></div>
+    <script>
+      const startPos = [-36.53930308998289, 175.09072678789855];
+      const startZoom = 9;
+
+      const url =
+        'https://basemaps.linz.govt.nz/v1/tiles/aerial/WebMercatorQuad/{z}/{x}/{y}.webp?api=c01hp2vzrr0rpk62fadxbsk369y';
+      
+      const tiles = L.tileLayer(url, {
+        attribution:
+          '<a href="https://www.linz.govt.nz/data/linz-data/linz-basemaps/data-attribution">LINZ CC BY 4.0 © Imagery Basemap contributors</a>',
+      });
+
+      // Read markers data from data.csv
+      $.get('./data.csv', function(csvString) {
+
+        // Use PapaParse to convert string to array of objects
+        var data = Papa.parse(csvString, {header: true, dynamicTyping: true}).data;
+    
+        // For each row in data, create a marker and add it to the map
+        // For each row, columns `Latitude`, `Longitude`, and `Name` are required
+        for (var i in data) {
+          var row = data[i];
+    
+          var marker = L.marker([row.Latitude, row.Longitude], {
+            opacity: 1
+          }).bindPopup(row.Name);
+          
+          marker.addTo(map);
+        }
+      });
+
+
+      map = L.map('map').addLayer(tiles).setView(startPos, startZoom);
+      map.attributionControl.setPrefix('<a href="https://leafletjs.com/">Leaflet</a>');
+      
+    </script>
+  </body>
+</html>
